@@ -1,0 +1,22 @@
+/*Getting the current system date and time*/SELECT SYSDATETIME() ,
+SYSDATETIMEOFFSET() ,
+SYSUTCDATETIME() ,
+CURRENT_TIMESTAMP ,
+GETDATE() ,
+GETUTCDATE();
+
+/* Getting the current system date*/
+
+SELECT CONVERT (date, SYSDATETIME())
+,CONVERT (date, SYSDATETIMEOFFSET())
+,CONVERT (date, SYSUTCDATETIME())
+,CONVERT (date, CURRENT_TIMESTAMP)
+,CONVERT (date, GETDATE())
+,CONVERT (date, GETUTCDATE());
+
+/* Getting the current system time */SELECT CONVERT (time, SYSDATETIME())
+,CONVERT (time, SYSDATETIMEOFFSET())
+,CONVERT (time, SYSUTCDATETIME())
+,CONVERT (time, CURRENT_TIMESTAMP)
+,CONVERT (time, GETDATE())
+,CONVERT (time, GETUTCDATE());

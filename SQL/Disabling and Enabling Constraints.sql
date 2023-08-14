@@ -1,0 +1,1 @@
+/* Disabling / Enabling Constraints *//* Disable */ALTER TABLE Students NOCHECK CONSTRAINT s_check_gender;/* Enable */ALTER TABLE Students CHECK CONSTRAINT s_check_gender;
